@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Orator10 BT' ;
+    box-sizing:content-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /*background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(bg.png);*/
+    background-image:url(bg.png);
+    background-position:center;
+    background-size: cover;
+    position: fixed;
+    display: flex;
+}
+#title{
+    font-size: 6em;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-weight: 0;
+    color:rgb(240, 180, 28);
+    position: absolute;
+    top:0%;
+    left: 100px;
+    border-color: rgb(243, 238, 238);
+    transform: translate(-50%,-50);
+    border-radius: 5em;
+    text-shadow: 2px 2px 5px black;
+    text-align: start;
+}
+#mybutton{
+    position: absolute;
+    left: 200px;
+    font-size: 2rem ;
+    flex-basis: auto;
+    background: #5b0d78;
+    color: #fff;
+    height: 60px;
+    width: 350px ;
+    border-radius: 30px;
+    cursor:pointer;
+    margin: 250px;
+    right: 500px;
+    align-items:center;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+    transition: 0.4s; 
+}
+.form-box{
+    width:20%;
+    max-width: 450px;
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    padding:20px 60px 70px;
+    padding-bottom: 50px;
+    text-align: center;   
+    display: none;
+}
+.form-box h1{
+    align-items: top;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #3c00a0;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 47%;
+    transform: translate(-50);
+}
+.input-field{
+    background: #eaeaea;
+    margin:15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+
+}
+form p a{
+    text-decoration:none ;
+    color:#3c00a0;
+}
+.btn-field{
+    width:100%;
+    display: flex;
+    padding-top: 10%;
+    justify-content: center;
+}
+.btn-field button{
+    width: 50%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor:pointer;
+    transition: background 1s;
+    margin-bottom: 10px;
+}
+
+
+

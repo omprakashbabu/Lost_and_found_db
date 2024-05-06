@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found page</title>
+    <link rel="stylesheet" href="found.css">
+</head>
+<body>
+    <form class = "container" action="/found" method="post">
+        <h1 id="title">Found Article Information</h1>
+        <p>(Provide information about the Found property)</p>
+
+        <button id="found-home" type="submit" class="Fbutton">Home</button>
+        <script>
+            let Fbutton = document.getElementById('found-home');
+        
+            Fbutton.onclick = function(f) {
+            f.preventDefault();
+        
+            // Replace localhost and the folder name
+            // based on your setup
+            location.href = 'home.html';
+            }        
+        </script>
+
+        <p><b>How does it works?</b> <br>
+            <ul>
+                <li>Our Matching System Finds Lost Property <br></li>
+                <li>Receive Notifications of Matching Found Items <br></li>
+                <li>Help us Find The Owner of what Was Lost</li>
+            </ul>
+            
+
+        <p>* Please be descriptive when reporting found property, the more information you <br>
+            give us the better chance we have of reuniting the lost property to the owner.</p>
+        
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">What was found *</label><br>
+                <label for="fname">(Dog, Jacket , Smartphone, Wallet, etc..)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Found item" name="founditems">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Category *</label><br>
+                <label for="fname">(Animals/pets, Valuables, Electronics, Accessories, etc..) This field is required.</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Item Category" name="foundCategory">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Brand</label><br>
+                <label for="fname">(Ralph Lauren, Samsung, KitchenAid, etc.)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Item Brand" name="foundbrand">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Item Description *</label><br>
+                <label for="fname">Please provide any description of your found property.</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Additional information" name="founddesc">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Primary Color</label><br>
+                <label for="fname">Please add the color that best represents the found property (Black, Red, Blue, etc.)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Primary color" name="foundPricolor">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Secondary Color</label><br>
+                <label for="fname">Please add a color that acts as a less dominant (Type NA if not applicable.)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Secondary color" name="foundSeccolor">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Date Lost *</label><br>
+                <label for="fname">Please add the approximate date when the item was found.</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="date" name="founddate">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Time Lost *</label><br>
+                <label for="fname">Please add the approximate time of day the item was found.</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="time" name="foundtime">
+                </div>
+            </div>
+        </div>
+<!--
+        <h3>Location Information</h3>
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Where Found *</label><br>
+                <label for="fname">Please provide an approximate location of the found property (Bar, Restaurant, Park, etc.)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Provide the address"><br>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62255.11143426171!2d79.98628051878907!3d12.78211
+                    681072736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f9e913d56419%3A0x724474b4711d2a2e!2sMaraimalai%20N
+                    agar%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1713553025689!5m2!1sen!2sin" width="600" height="450" style="border:0;" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>
+            </div>
+        </div>
+-->
+
+
+        <h3>Contact Information</h3>
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">First Name *</label><br>
+                <label for="fname">Please enter your first name (This will appear on your submission)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="First name" name="foundUfirname">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Last Name *</label><br>
+                <label for="fname">Please enter your last name (This will appear on your submission)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Last name" name="foundUlastname">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Phone Number *</label><br>
+                <label for="fname">Please enter the phone number to display on your submission</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="tel" placeholder="Enter the phone number" name="foundphone">
+                    
+                </div>
+            </div>    
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Email ID *</label><br>
+                <label for="fname">Please enter your email (This will appear on your submission)
+                </label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="email" placeholder="Enter email id" name="foundEmailid">   
+                </div>
+            </div>    
+        </div>
+
+        <div class="submit">
+            <button type="submit">Publish</button>
+        </div>
+
+
+    </form>    
+    
+  <!--
+    <style>
+        .alert {
+          padding: 20px;
+          background-color:#00A86B;
+          color: white;
+        }
+
+        .alert {
+        opacity: 1;
+        transition: opacity 0.6s; /* 600ms to fade out */
+        }
+        
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        .closebtn:hover {
+          color: black;
+        }
+    </style>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Success!</strong>Data successfully stored.
+    </div>
+
+    <script>
+        // Get all elements with class="closebtn"
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+        
+        // Loop through all close buttons
+        for (i = 0; i < close.length; i++) {
+          // When someone clicks on a close button
+          close[i].onclick = function(){
+        
+            // Get the parent of <span class="closebtn"> (<div class="alert">)
+            var div = this.parentElement;
+        
+            // Set the opacity of div to 0 (transparent)
+            div.style.opacity = "0";
+        
+            // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+            setTimeout(function(){ div.style.display = "none"; }, 600);
+          }
+        }
+        </script>
+            
+    -->  
+
+</body>
+</html>

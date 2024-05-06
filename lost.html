@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost page</title>
+    <link rel="stylesheet" href="lost.css">
+</head>
+<body>
+    <form class = "container" action="/lost" method="post">
+        <h1 id="title">Lost Article Information</h1>
+        <p>(Provide information about the lost property)</p>
+
+        <button id="home" type="submit">Home</button>
+        <script>
+            let Lbutton = document.getElementById('home');
+        
+            Lbutton.onclick = function(f) {
+            f.preventDefault();
+        
+            // Replace localhost and the folder name
+            // based on your setup
+            location.href = 'home.html';
+            }        
+        </script>
+
+
+        <p><b>How does it works?</b> <br>
+            <ul>
+                <li>Our Matching System Finds Lost Property <br></li>
+                <li>Receive Notifications of Matching Found Items <br></li>
+                <li>Extended Reach Out with Local Networks</li>
+            </ul>
+            
+
+        <p>* Please be descriptive when submitting your lost property report, the more <br>
+            information you give us the better chance you have of retrieving your items.</p>
+        
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">What was lost *</label><br>
+                <label for="fname">(Dog, Jacket , Smartphone, Wallet, etc..)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Lost item" name="lostitem">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Category *</label><br>
+                <label for="fname">(Animals/pets, Valuables, Electronics, Accessories, etc..) This field is required.</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Item Category" name="lostCategory">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Brand</label><br>
+                <label for="fname">(Ralph Lauren, Samsung, KitchenAid, etc.)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Item Brand" name="lostbrand">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Item Description *</label><br>
+                <label for="fname">Please provide any description of your lost property.</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Additional information" name="lostdesc">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Primary Color</label><br>
+                <label for="fname">Please add the color that best represents the lost property (Black, Red, Blue, etc.)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Primary color" name="lostPricolor">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Secondary Color</label><br>
+                <label for="fname">Please add a color that acts as a less dominant (Type NA if not applicable.)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Secondary color" name="lostSeccolor">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Date Lost *</label><br>
+                <label for="fname">Please add the approximate date when the item was lost.</label><br>
+                <div class="inputfield" id="namefield" name="lostdate">
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Time Lost *</label><br>
+                <label for="fname">Please add the approximate time of day the item was lost.</label><br>
+                <div class="inputfield" id="namefield" >
+                    <input type="time" name="losttime">
+                </div>
+            </div>
+        </div>
+<!--
+        <h3>Location Information</h3>
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Where Lost *</label><br>
+                <label for="fname">Please provide an approximate location of the lost property (Bar, Restaurant, Park, etc.)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Provide the address" name="lostaddress"><br>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62255.11143426171!2d79.98628051878907!3d12.78211
+                    681072736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f9e913d56419%3A0x724474b4711d2a2e!2sMaraimalai%20N
+                    agar%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1713553025689!5m2!1sen!2sin" width="600" height="450" style="border:0;" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>
+            </div>
+        </div>
+-->
+
+        <h3>Contact Information</h3>
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">First Name *</label><br>
+                <label for="fname">Please enter your first name (This will appear on your submission)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="First name" name="lostUfirname">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Last Name *</label><br>
+                <label for="fname">Please enter your last name (This will appear on your submission)</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="text" placeholder="Last name" name="lostUlastname">
+                </div>
+            </div>
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Phone Number *</label><br>
+                <label for="fname">Please enter the phone number to display on your submission</label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="tel" placeholder="Enter the phone number" name="lostphone">
+                    
+                </div>
+            </div>    
+        </div>
+
+        <div class="iteminfo">
+            <div class="inputgroup">
+                <label for="fname">Email ID *</label><br>
+                <label for="fname">Please enter your email (This will appear on your submission)
+                </label><br>
+                <div class="inputfield" id="namefield">
+                    <input type="email" placeholder="Enter email id" name="lostEmailid">   
+                </div>
+            </div>    
+        </div>
+
+        <div class="submitbutton">
+            <button type="submit" class="submit" >Submit</button>
+        </div>
+
+
+    </form>    
+              
+    </div>
+
+</body>
+</html>

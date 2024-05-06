@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <div class="form-container">
+        <h1 id="title">Lost & Found Articles</h1>
+        <div class="form-box">
+            <h1 id="boxtitle">Login</h1>
+            <form action="/login" method="post" id="loginform">
+                <div class="form-group">                    
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input for="email" type="email" placeholder="Email" name="email" required autocomplete="off">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input for="password" type="password" placeholder="Password" name="password" required>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="loginBtn" class="submit-btn">Log In</button>                    
+                </div>
+            </form>
+            <br>
+        <p>Don't have an account? <a href="/signup.html">Signup</a></p>
+    </div>
+
+    <script>
+        let signupBtn = document.getElementById("signupBtn");
+        let loginBtn = document.getElementById("loginBtn");
+        let nameField = document.getElementById("nameField");
+        let boxtitle  = document.getElementById("boxtitle");
+        document.querySelector(".form-box").style.display = "block";                         
+    </script>   
+
+</body>
+</html>

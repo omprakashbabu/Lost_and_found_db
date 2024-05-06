@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to our Lost and Found Service</h1>
+    </header>
+
+    <div class="content">
+        <p style="color: #1f1d1d; font-weight: bold;">Have you lost something valuable? Or found something that doesn't belong to you? We're here to help!</p>
+        <p>Our platform connects people who have lost items with those who have found them, </p><p>facilitating the return of lost belongings to their rightful owners.</p>
+        <p style="color: rgb(9, 21, 30); font-weight: bold; text-shadow: 1em #f4f2f2">Choose one of the options below to get started:</p>
+
+        <form action="/tolost">
+            <div class="button-container">
+                <button id="left-button" type="submit" class="button">Have you lost something?</button>
+            </div>
+        </form>
+
+        <form action="/tofound">
+            <div class="button-container">
+                <button id="right-button" type="submit" class="button">Have you found something?</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Contact Us: contact@lostandfound.com</p>
+    </footer>
+
+    <script>
+        let rightbutton = document.getElementById('right-button');
+
+        rightbutton.onclick = function(e) {
+            e.preventDefault();
+            location.href = 'found.html'; // Change to your found items page
+        }
+    </script>
+
+    <script>
+        let leftbutton = document.getElementById('left-button');
+
+        leftbutton.onclick = function(f) {
+            f.preventDefault();
+            location.href = 'lost.html'; // Change to your lost items page
+        }
+    </script>
+
+</body>
+</html>
