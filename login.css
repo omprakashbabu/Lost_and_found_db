@@ -14,7 +14,7 @@
     display: flex;
 }
 #title{
-    font-size: 6em;
+    font-size: 6em; 
     font-family:Georgia, 'Times New Roman', Times, serif ;
     font-weight: 0;
     color:rgb(240, 180, 28);
