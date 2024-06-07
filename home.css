@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-header {
+header { 
     text-align: center;
     padding: 20px;
     color: #ffffff; /* White font color */
